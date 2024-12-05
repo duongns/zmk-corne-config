@@ -9,6 +9,35 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        BluetoothClear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <29 5 0>;
+        };
+
+        Bluetooth1 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <29 5 1>;
+        };
+
+        Bluetooth2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <5 2 29>;
+        };
+
+        Bluetooth3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <29 5 3>;
+        };
+
+        Bluetooth4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <5 29 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
